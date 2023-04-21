@@ -1,0 +1,168 @@
+@import 'variables';
+@import 'mixins';
+
+
+// Global styles
+// * {
+//   box-sizing: border-box;
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+// }
+
+// html {
+//   font-family: $font-family;
+//   font-size: $base-font-size;
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+// }
+// h2 {
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   font-family: $font-family;
+//   margin: 0 auto;
+//   margin-bottom: 20px;
+//   background-color: $primary-color;
+//   border: 5px solid white;
+//   text-align: center;
+//   width: 40vw; /* change the width to 40vw or any other value you prefer */
+//   border-radius: 10px;
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+// }
+// body {
+//   height: 100%;
+//   @include responsive-screen-size($small-screen-min, $small-screen-max, $medium-screen-min, $medium-screen-max, $large-screen-min, $large-screen-max);
+//   margin: 0 auto;
+//   margin-bottom: 20px;
+
+//   border: 5px solid white;
+//   text-align: center;
+//   width: 90vw;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   border-radius: 10px;
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+//   background-image: url('../images/cheetahprint.png') ;
+// }
+
+// h1, h3, h4, h5, h6 {
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   font-family: $font-family;
+//   margin: 0 auto;
+//   margin-bottom: 20px;
+//   background-color: $primary-color;
+//   border: 5px solid white;
+//   text-align: center;
+//   width: 50vw;
+//   border-radius: 10px;
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+
+//   // width: 100%;
+//   // height: 80px;
+//   // background:pink;
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: space-between;
+//   // padding: 0 100px;
+
+
+// }
+
+
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0 -10px;
+//   margin-bottom: 20px;
+//   align-items: center; /* center vertically */
+//   justify-content: center; /* center horizontally */
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+// }
+
+// .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+//   @include responsive-font-size(768px, 1024px, 16px, 18px);
+//   background-color: $primary-color;
+//   padding: 20px;
+//   border-radius: 10px;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   text-align: center;
+// }
+
+
+body{
+  background-image: url(../images/cheetahprint.jpg);
+}
+
+header{
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     font-family: $font-family;
+     margin: 0 auto;
+     margin-bottom: 20px;
+     background-color: $primary-color;
+     border: 5px solid white;
+     text-align: center;
+     width: 50vw;
+     border-radius: 10px;
+
+}
+
+/*for the body columns*/
+.col {
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  color: #fefefe;
+}
+.grid {
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 50px auto;
+  padding: 0 100px;
+}
+
+.col {
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  background-color:  $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.col img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.col h3 {
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  font-size: 24px;
+  font-weight: bold ;
+  margin-bottom: 10px;
+}
+
+.col p {
+  @include responsive-font-size(768px, 1024px, 16px, 18px);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:  $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 5px solid white;
+
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
